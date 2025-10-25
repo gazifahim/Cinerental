@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00d991;
+  --container-max-width: 1280px; /* optional, if you wanna limit width */
+  --container-padding: 1.25rem; /* same as padding: 1.25rem */
+}
+
+@layer base {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    max-width: var(--container-max-width);
+  }
+}
